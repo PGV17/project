@@ -12,7 +12,7 @@ email = \"\"\n\
 echo "\
 [server]\n\
 headless = true\n\
-enableCORS=false\n\
+enableCORS = false\n\
 port = \$PORT\n\
 [browser]\n\
 gatherUsageStats = false\n\

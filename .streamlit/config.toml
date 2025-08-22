@@ -1,19 +1,12 @@
 # .streamlit/config.toml
 [server]
-port = 8501
+headless = true
 enableCORS = false
 enableXsrfProtection = false
-maxUploadSize = 200
-maxMessageSize = 200
-enableWebsocketCompression = true
-headless = false
-runOnSave = false
-allowRunOnSave = false
+port = 8501
 
 [browser]
-serverAddress = "localhost"
 gatherUsageStats = false
-serverPort = 8501
 
 [theme]
 primaryColor = "#3B82F6"
@@ -21,12 +14,5 @@ backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F8FAFC"
 textColor = "#1F2937"
 font = "sans serif"
-
-[runner]
-magicEnabled = true
-fastReruns = true
-enforceSerializableSessionState = true
-
-[logger]
 level = "info"
 messageFormat = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
