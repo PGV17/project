@@ -1,10 +1,10 @@
 # Financial Analysis Application
 
-🏦 **Real-time Credit Scoring and Financial Analysis Dashboard**
+**Real-time Credit Scoring and Financial Analysis Dashboard**
 
 A sophisticated financial analysis application that provides real-time credit scoring and risk assessment using machine learning, natural language processing, and live financial data integration.
 
-## 🚀 Features
+## Features
 
 - **Real-time Credit Scoring**: Advanced algorithms for dynamic credit assessment
 - **Multi-Company Analysis**: Support for major US stocks (AAPL, MSFT, GOOGL, TSLA, etc.)
@@ -14,7 +14,7 @@ A sophisticated financial analysis application that provides real-time credit sc
 - **Explainable AI**: Detailed explanations for credit scoring decisions
 - **Auto-refresh Capability**: Real-time data updates every 30 seconds
 
-## 📊 Dashboard Components
+## Dashboard Components
 
 ### 1. Credit Score Gauge
 
@@ -42,7 +42,7 @@ A sophisticated financial analysis application that provides real-time credit sc
 - Recent news impact
 - Improvement recommendations
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: Streamlit
 - **Data Processing**: Pandas, NumPy
@@ -52,13 +52,13 @@ A sophisticated financial analysis application that provides real-time credit sc
 - **NLP**: NLTK, TextBlob
 - **Web Scraping**: Requests
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - pip package manager
 - Internet connection for real-time data
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -98,7 +98,7 @@ A sophisticated financial analysis application that provides real-time credit sc
 
    This will check all dependencies and download required NLTK data automatically.
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Start the application**
 
@@ -112,7 +112,7 @@ A sophisticated financial analysis application that provides real-time credit sc
 
 4. **Analyze results** and explore the interactive dashboard
 
-## 📈 Supported Companies
+## Supported Companies
 
 The application includes pre-configured analysis for major companies:
 
@@ -132,7 +132,7 @@ The application includes pre-configured analysis for major companies:
 - **Berkshire Hathaway Inc. (BRK.B)**
 - **Visa Inc. (V)**
 
-## 🔧 Configuration
+## Configuration
 
 ### Auto-refresh Settings
 
@@ -146,7 +146,7 @@ The application includes pre-configured analysis for major companies:
 - Customize visualization themes
 - Export analysis results
 
-## 📊 Credit Scoring Methodology
+## Credit Scoring Methodology
 
 The platform uses a sophisticated multi-factor model:
 
@@ -171,7 +171,7 @@ The platform uses a sophisticated multi-factor model:
 - Market Perception
 - Social Media Indicators
 
-## 🛡️ Risk Categories
+## Risk Categories
 
 - **AAA (850+)**: Exceptional creditworthiness
 - **AA (750-849)**: Very strong financial position
@@ -179,7 +179,7 @@ The platform uses a sophisticated multi-factor model:
 - **BBB (550-649)**: Adequate credit quality
 - **Below 550**: Below investment grade
 
-## 🔍 Technical Architecture
+## Technical Architecture
 
 ### Core Modules
 
@@ -218,25 +218,25 @@ python -c "import ml_models; import nlp_engine; print('All modules imported succ
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This application is for educational and research purposes only. It should not be used as the sole basis for investment or credit decisions. Always consult with qualified financial professionals before making financial decisions.
 
-## 🔗 Data Sources
+## Data Sources
 
 - **Financial Data**: Yahoo Finance
 - **Market Data**: Real-time stock APIs
 - **News Sentiment**: Web scraping and NLP analysis
 
-## 📞 Support
+## Support
 
 For support, please open an issue on GitHub or contact the development team.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Yahoo Finance for real-time financial data
 - Streamlit for the amazing web framework
@@ -245,4 +245,4 @@ For support, please open an issue on GitHub or contact the development team.
 
 ---
 
-**Built with ❤️ for the financial analysis community**
+**Built with care for the financial analysis community**

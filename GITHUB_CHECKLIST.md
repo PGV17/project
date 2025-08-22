@@ -35,7 +35,7 @@
 - [x] Prerequisites listed
 - [x] Troubleshooting section in DEPLOYMENT.md
 
-### 🚀 **User Experience**
+### **User Experience**
 
 - [x] No email prompts on startup
 - [x] Clean application launch

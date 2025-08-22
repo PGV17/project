@@ -95,7 +95,7 @@ def main():
     print("\n" + "=" * 60)
     if python_ok and packages_ok and modules_ok:
         print("🎉 Setup verification completed successfully!")
-        print("\n🚀 You can now run the application with:")
+        print("\nYou can now run the application with:")
         print("   streamlit run app.py")
     else:
         print("❌ Setup verification failed. Please check the issues above.")

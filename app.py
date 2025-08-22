@@ -24,7 +24,7 @@ warnings.filterwarnings('ignore')
 # Configure Streamlit page
 st.set_page_config(
     page_title="CredTech Intelligence Platform",
-    page_icon="📊",
+    page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -247,21 +247,21 @@ class ExplainabilityEngine:
         recent_trend = np.polyfit(range(len(historical_scores)), historical_scores, 1)[0]
         
         if recent_trend > 5:
-            return "📈 Improving credit profile with strong upward trend"
+            return "Improving credit profile with strong upward trend"
         elif recent_trend > 1:
-            return "📊 Gradual improvement in creditworthiness"
+            return "Gradual improvement in creditworthiness"
         elif recent_trend > -1:
-            return "➡️ Stable credit profile with minimal changes"
+            return "Stable credit profile with minimal changes"
         elif recent_trend > -5:
-            return "📉 Slight deterioration in credit metrics"
+            return "Slight deterioration in credit metrics"
         else:
-            return "⚠️ Significant decline in creditworthiness indicators"
+            return "Significant decline in creditworthiness indicators"
 
 def create_dashboard():
     """Main dashboard interface"""
     
     # Header
-    st.title("🏦 CredTech Intelligence Platform")
+    st.title("CredTech Intelligence Platform")
     st.markdown("*Real-time Explainable Credit Scoring with Multi-Source Intelligence*")
     
     # Initialize engines using cache to avoid serialization issues
@@ -276,7 +276,7 @@ def create_dashboard():
     data_engine, scoring_engine, explainer = get_engines()
     
     # Sidebar controls
-    st.sidebar.header("🎯 Analysis Controls")
+    st.sidebar.header("Analysis Controls")
     
     # Company selection
     company_options = {
@@ -319,7 +319,7 @@ def create_dashboard():
     
     # Real-time data fetching
     data_refresh_needed = (auto_refresh or 
-                          st.sidebar.button("🔄 Refresh Data") or 
+                          st.sidebar.button("Refresh Data") or 
                           st.session_state.get('last_ticker') != selected_ticker)
     
     if data_refresh_needed:
@@ -337,10 +337,10 @@ def create_dashboard():
             
             # Show success message
             if not auto_refresh:  # Don't spam with auto-refresh
-                st.sidebar.success(f"✅ Data updated for {selected_ticker}")
+                st.sidebar.success(f"Data updated for {selected_ticker}")
                 
         # Add a small indicator of the current analysis
-        st.sidebar.info(f"🎯 Currently analyzing: **{selected_ticker}**")
+        st.sidebar.info(f"Currently analyzing: **{selected_ticker}**")
     
     # Use cached data if available
     if 'financial_data' not in st.session_state or st.session_state.get('last_ticker') != selected_ticker:
@@ -369,7 +369,7 @@ def create_dashboard():
     
     with col1:
         # Credit Score Display
-        st.markdown(f"### 📊 Credit Score - {company_name}")
+        st.markdown(f"### Credit Score - {company_name}")
         
         # Score gauge
         fig_gauge = go.Figure(go.Indicator(
@@ -419,7 +419,7 @@ def create_dashboard():
     
     with col2:
         # Risk Breakdown
-        st.markdown("### ⚖️ Risk Factor Analysis")
+        st.markdown("### Risk Factor Analysis")
         
         risk_breakdown = explainer.generate_risk_breakdown(features, credit_score)
         
@@ -440,7 +440,7 @@ def create_dashboard():
     
     with col3:
         # Quick Stats
-        st.markdown(f"### 📈 Key Metrics for {selected_ticker}")
+        st.markdown(f"### Key Metrics for {selected_ticker}")
         st.metric("Market Cap", f"${financial_data['market_cap']/1e9:.1f}B", 
                  delta=f"Updated: {financial_data['last_updated'].strftime('%H:%M:%S')}")
         st.metric("P/E Ratio", f"{financial_data['pe_ratio']:.1f}")
@@ -450,14 +450,14 @@ def create_dashboard():
         
         # Add data freshness indicator
         if st.session_state.get('last_ticker') == selected_ticker:
-            st.success("✅ Data is current")
+            st.success("Data is current")
         else:
-            st.warning("⚠️ Updating data...")
+            st.warning("Updating data...")
     
     # Detailed explanations
     if show_explanations:
         st.markdown("---")
-        st.markdown("### 🔍 Detailed Score Explanation")
+        st.markdown("### Detailed Score Explanation")
         
         col1, col2 = st.columns(2)
         
@@ -467,14 +467,14 @@ def create_dashboard():
             
             for explanation, impact, category in explanations:
                 if category == "positive":
-                    st.success(f"✅ {explanation} ({impact:+d} points)")
+                    st.success(f"{explanation} ({impact:+d} points)")
                 else:
-                    st.warning(f"⚠️ {explanation} ({impact:+d} points)")
+                    st.warning(f"{explanation} ({impact:+d} points)")
         
         with col2:
             st.markdown("#### Recent News Events")
             for event in sentiment_data['recent_events']:
-                st.info(f"📰 {event}")
+                st.info(f"{event}")
             
             st.markdown("#### Macro Environment")
             st.write(f"• GDP Growth: {macro_data['gdp_growth']:.1f}%")
@@ -484,7 +484,7 @@ def create_dashboard():
     
     # Historical trend simulation
     st.markdown("---")
-    st.markdown("### 📊 Historical Credit Score Trend")
+    st.markdown("### Historical Credit Score Trend")
     
     # Generate simulated historical data
     dates = pd.date_range(end=datetime.now(), periods=30, freq='D')
@@ -506,7 +506,7 @@ def create_dashboard():
     st.info(trend_analysis)
     
     # Comparison with traditional ratings
-    st.markdown("### 🏛️ Traditional Rating Comparison")
+    st.markdown("### Traditional Rating Comparison")
     col1, col2, col3 = st.columns(3)
     
     with col1:

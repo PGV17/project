@@ -1,6 +1,6 @@
-# Deployment Guide 🚀
+# Deployment Guide
 
-## 🌟 Quick Deployment Options
+## Quick Deployment Options
 
 ### Option 1: Streamlit Cloud (Easiest - FREE)
 
@@ -68,7 +68,7 @@ docker run -p 8501:8501 financial-analysis-app
 docker-compose up
 ```
 
-## 🚀 Recommended: Streamlit Cloud (Free)
+## Recommended: Streamlit Cloud (Free)
 
 **Step-by-step guide for easiest deployment:**
 
@@ -101,7 +101,7 @@ docker-compose up
    - No server management required
    - Automatic updates when you push to GitHub
 
-## 🏭 Production Deployment (Heroku)
+## Production Deployment (Heroku)
 
 **For professional hosting with custom domains:**
 
@@ -128,7 +128,7 @@ docker-compose up
    heroku open
    ```
 
-## ⚡ Quick Deploy (Railway)
+## Quick Deploy (Railway)
 
 **Modern deployment platform:**
 
@@ -137,7 +137,7 @@ docker-compose up
 3. Railway automatically detects and deploys your Python app
 4. Get a live URL in seconds!
 
-## 🔧 Environment Variables
+## Environment Variables
 
 For production deployments, you can set these environment variables:
 
@@ -147,7 +147,7 @@ STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 STREAMLIT_SERVER_PORT=8501
 ```
 
-## 📊 Post-Deployment Checklist
+## Post-Deployment Checklist
 
 - [ ] App loads successfully
 - [ ] All company data loads properly
@@ -156,7 +156,7 @@ STREAMLIT_SERVER_PORT=8501
 - [ ] No console errors
 - [ ] Mobile responsiveness verified
 
-## 🎯 Access Your Deployed App
+## Access Your Deployed App
 
 Once deployed, your financial analysis dashboard will be accessible to anyone with the URL. Users can:
 
@@ -165,14 +165,14 @@ Once deployed, your financial analysis dashboard will be accessible to anyone wi
 - Explore risk factor breakdowns
 - Access professional financial visualizations
 
-## 💡 Tips
+## Tips
 
 - **Streamlit Cloud**: Best for demos and sharing
 - **Heroku**: Best for production with custom features
 - **Docker**: Best for enterprise/on-premise deployment
 - **Railway**: Best for modern, fast deployment
 
-Choose the option that best fits your needs! 🚀
+Choose the option that best fits your needs!
 
 ```dockerfile
 FROM python:3.9-slim
@@ -196,7 +196,7 @@ Create `Procfile`:
 web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -211,7 +211,7 @@ Edit `.streamlit/config.toml` for custom settings:
 - Server configuration
 - Browser settings
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -227,7 +227,7 @@ Edit `.streamlit/config.toml` for custom settings:
 - Optimize data fetching frequency
 - Consider data compression
 
-## 📊 Monitoring
+## Monitoring
 
 ### Health Checks
 

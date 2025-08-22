@@ -12,19 +12,19 @@ import platform
 def check_python_version():
     """Check if Python version is compatible"""
     if sys.version_info < (3, 8):
-        print("❌ Python 3.8 or higher is required")
+        print("Python 3.8 or higher is required")
         print(f"Current version: {sys.version}")
         sys.exit(1)
-    print(f"✅ Python {sys.version} detected")
+    print(f"Python {sys.version} detected")
 
 def install_requirements():
     """Install required packages"""
-    print("📦 Installing requirements...")
+    print("Installing requirements...")
     try:
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-        print("✅ Requirements installed successfully")
+        print("Requirements installed successfully")
     except subprocess.CalledProcessError:
-        print("❌ Failed to install requirements")
+        print("Failed to install requirements")
         sys.exit(1)
 
 def download_nltk_data():
@@ -40,7 +40,7 @@ def download_nltk_data():
 
 def run_application():
     """Start the Streamlit application"""
-    print("🚀 Starting CredTech Intelligence Platform...")
+    print("Starting CredTech Intelligence Platform...")
     try:
         subprocess.run([sys.executable, "-m", "streamlit", "run", "app.py"])
     except KeyboardInterrupt:
